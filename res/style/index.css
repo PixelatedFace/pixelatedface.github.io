@@ -1,5 +1,108 @@
 
+html{
+    min-height: 100%;
+    position: relative;
+}
 
-body {
-    background-color: darkslategrey;
+body {   
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    /*background-image: linear-gradient(to top, rgb(65, 71, 77), rgb(110, 120, 129));*/
+    background-image: 
+    radial-gradient(white, rgba(255, 255, 255, 0.2) 2px, transparent 10px),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 7px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 3px),
+    radial-gradient(white, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent 7px);
+  
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    font-family:monospace;
+}
+
+#gradient_div{
+    position: absolute;
+    width: 99%;
+    height: 99%;
+  
+
+}   
+
+h1{
+    color: aliceblue;
+}
+
+#t1{
+    position: absolute;
+    right: 135px;
+    top: 35px;
+}
+
+#l{
+    position: relative;
+    left: 115px;
+}
+
+#links { 
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+
+}
+
+button{
+    position: sticky;
+    left: 0px;
+    color:aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    width: 100px;
+    border-style: outset;   
+}
+
+button:active{
+    outline: auto;
+    outline-color: rgba(255, 255, 255, 0.35);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#btn_itch{
+   
+    top: 150px;
+    background-color: rgb(206, 79, 79);
+    border-color: rgb(99, 39, 39);   
+}
+
+#btn_git{
+    top: 150px;
+    background-color: rgb(48, 48, 48);
+    border-color: rgb(0, 0, 0);
+}
+
+#btn_yt{
+    top: 200px;
+    background-color: rgb(255, 0, 0);
+    border-color: rgb(160, 0, 0);
+}
+
+@keyframes spamton-move {
+    from {left: -20%;}
+    to {left: 90%;}
+}
+
+
+#spamton{
+    position: absolute;
+    bottom: 0;
+    width: 21%;
+    height: 25%;
+    animation-name: spamton-move;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
 }
